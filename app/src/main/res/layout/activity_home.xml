@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#273582"
+    tools:context=".homeActivity">
+<!--    <ImageView-->
+<!--        android:id="@+id/backBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:minHeight="40dp"-->
+
+<!--        android:minWidth="40dp"-->
+<!--        android:background="@drawable/baseline_arrow_back_24"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/title"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Skill Sync"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_marginTop="30dp"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_alignParentTop="true"-->
+
+
+<!--        android:textSize="30sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/welcometext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/title"-->
+
+<!--        android:layout_marginTop="17dp"-->
+<!--        android:text="Welcome, "-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="24sp"-->
+
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/showUsername"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/title"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="17dp"-->
+<!--        android:layout_toEndOf="@+id/welcometext"-->
+<!--        android:text="Bravo"-->
+<!--        android:textColor="@color/white"-->
+
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/intro"-->
+<!--        android:layout_below="@id/showUsername"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text=" This application intends to provide assistance to students by assesing-->
+<!--their strength and weakness. You can either choose to take quiz to get your results or-->
+<!--you can choose from various roadmaps for different technologies."-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/into2"-->
+<!--        android:layout_below="@id/intro"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:text="You can also connect to your alumni who specializes in your preffered-->
+<!--course and also join communities where you will get to help and seek guidance from your peers."-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/quizz"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@id/nav"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:text="Take Quiz"-->
+<!--        android:textSize="30dp"-->
+<!--        android:background = "@color/white"-->
+<!--        android:padding="4dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+
+<!--        />-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:layout_above="@+id/nav"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"
+        android:id="@+id/nav"
+        />
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/nav"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="@color/white"-->
+<!--        android:gravity="center">-->
+
+<!--   <ImageView-->
+<!--       android:id="@+id/homeId"-->
+<!--       android:layout_width="40dp"-->
+<!--       android:layout_height="40dp"-->
+<!--       android:layout_alignParentStart="true"-->
+<!--       android:layout_marginStart="10dp"-->
+<!--       android:background="@drawable/home2"-->
+<!--       android:layout_centerVertical="true"-->
+<!--       android:backgroundTint="@color/black"-->
+<!--       />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/courseId"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--         android:layout_centerHorizontal="true"-->
+
+<!--            android:background="@drawable/calender"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/profileID"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--          android:layout_alignParentEnd="true"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--            android:background="@drawable/user"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:backgroundTint="@color/black"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>
